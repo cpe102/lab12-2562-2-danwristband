@@ -70,8 +70,8 @@ void showImage(const bool pic[][M]){
     }
 }
 void updateImage(bool point[][M],int s ,int x,int y){
-    for(int i=0;i<M;i++){
-        for(int j=0;j<N;j++){
+    for(int i=0;i<N;i++){
+        for(int j=0;j<M;j++){
             if((pow((pow(i-x,2)+pow(j-y,2)),0.5))<=s-1){
                point[i+1][j+1]=1; 
             }
